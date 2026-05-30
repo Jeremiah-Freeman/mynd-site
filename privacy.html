@@ -16,17 +16,23 @@
 <main class="wrap">
 
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: May 27, 2026 · Operated by Jeremiah Freeman</p>
+<p class="meta">Last updated: May 30, 2026 · Operated by Jeremiah Freeman</p>
 
 <h2>Overview</h2>
-<p>mynd is a reminders app that runs on your device. Your reminders, history, and chat content stay on your iPhone — not on our servers.</p>
+<p>mynd is a reminders app. To use it, you create an account. Your reminders themselves stay on your device — we don't keep a copy on our servers. We only store the minimum we need to identify your account and provide the chat feature.</p>
 
-<h2>What we collect — and don't</h2>
+<h2>What we collect</h2>
 <ul>
-  <li><strong>No account is required.</strong> We don't ask for your name, email, phone number, or any identifying information to use the app.</li>
-  <li><strong>Your reminders and chat content</strong> are saved in your device's local storage and are never uploaded to our servers.</li>
-  <li><strong>Notifications</strong> are scheduled by iOS on your device; we don't send push notifications from a server.</li>
-  <li><strong>No advertising IDs, analytics SDKs, or third-party trackers</strong> are bundled in the app.</li>
+  <li><strong>Your account identifier.</strong> When you sign in we create an account record containing a Supabase user ID and the email or identifier returned by your sign-in provider (Apple, Google, or the email you typed).</li>
+  <li><strong>Your name</strong>, if you choose to share it during Apple or Google sign-in. This is optional and used only to greet you in the app.</li>
+  <li><strong>Sign-in metadata</strong> like the time of your last login, used to keep your session valid.</li>
+</ul>
+
+<h2>What we don't collect</h2>
+<ul>
+  <li><strong>Your reminders, chat content, and history</strong> are saved in your device's local storage and are not uploaded to our servers.</li>
+  <li><strong>No advertising IDs, no analytics SDKs, no third-party trackers</strong> are bundled in the app.</li>
+  <li>We do not sell, rent, or share your personal information with third parties for advertising.</li>
 </ul>
 
 <h2>What is sent off your device</h2>
@@ -37,25 +43,41 @@
   <li>We send only the message text and the conversation turns we need to produce a useful reply. We do not send your device ID, contacts, photos, calendar, or location.</li>
 </ul>
 
+<h2>Sign-in providers</h2>
+<p>If you sign in with Apple or Google, that provider receives the request to authenticate you. We receive back only:</p>
+<ul>
+  <li>A stable identifier for your account.</li>
+  <li>Your email address (or, for Apple, a hide-my-email proxy address if you choose that option).</li>
+  <li>Your name, if you chose to share it during sign-in.</li>
+</ul>
+<p>We use Supabase (supabase.com) as our authentication and identity backend. Supabase processes your account data on our behalf under their terms of service.</p>
+
 <h2>Location</h2>
-<p>If you grant location permission for location-triggered reminders, location is read on your device to evaluate triggers and is <strong>not</strong> transmitted off-device. If a future version of mynd adds features that send location anywhere, that update will explain what is sent and to whom, and we'll ask before doing it.</p>
+<p>If you grant location permission for location-triggered reminders, location is read on your device to evaluate triggers and is <strong>not</strong> transmitted off-device.</p>
 
 <h2>Storage and security</h2>
 <ul>
-  <li>Data lives in iOS's app sandbox and benefits from device-level encryption (the same protection iOS gives every app).</li>
+  <li>Reminders, chats, and preferences live in iOS's app sandbox and benefit from device-level encryption.</li>
+  <li>Account records live in our Supabase database in encrypted form.</li>
   <li>All network traffic uses HTTPS.</li>
-  <li>Our backend keeps no chat logs and stores no user-identifiable data.</li>
 </ul>
 
 <h2>Deleting your data</h2>
 <ul>
-  <li>Open <strong>Settings → Reset all data</strong> to wipe everything from this device immediately.</li>
-  <li>Deleting mynd from your phone removes all local data.</li>
-  <li>Because we don't store data on our servers, there is no remote account to delete.</li>
+  <li>Open <strong>Settings → Profile → Delete account</strong> inside the app to permanently delete your mynd account and all server-side records associated with it. If you signed in with Apple, this also revokes mynd's access to your Apple ID.</li>
+  <li>Open <strong>Settings → Data &amp; Export → Reset all data</strong> to wipe all reminders, chats, and preferences from this device immediately.</li>
+  <li>Deleting mynd from your phone removes the on-device data, but does not delete your account on our servers. Use the in-app Delete Account flow for that.</li>
+  <li>To request deletion outside the app, email <a href="mailto:jaythinkshappiness@gmail.com">jaythinkshappiness@gmail.com</a>.</li>
 </ul>
 
+<h2>Data retention</h2>
+<p>We keep account records for as long as your account exists. When you delete your account, the record is removed from our database promptly (typically within minutes) and from backups within 30 days.</p>
+
 <h2>Children</h2>
-<p>mynd is not directed to children under 13 and we do not knowingly collect data from them.</p>
+<p>mynd is not directed to children under 13 and we do not knowingly collect data from them. If you believe a child under 13 created an account, please contact us so we can delete it.</p>
+
+<h2>Your rights</h2>
+<p>You can access, correct, export, or delete your data using the in-app controls or by contacting us at the email below. We will respond within a reasonable time, generally within 30 days.</p>
 
 <h2>Changes</h2>
 <p>If we materially change this policy, the updated text — with a new "Last updated" date — will be posted at this URL. Continued use after a change means you accept the new policy.</p>
